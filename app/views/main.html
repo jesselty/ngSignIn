@@ -1,0 +1,28 @@
+<user-popup settings="popup" ng-click="popUpVisibility(false)">
+    <div class="inner-popup" ng-click="preventBubble($event)">
+        <span class='close' ng-click="popUpVisibility(false)">X</span>
+        <strong>Sign In</strong>
+        <div class="ty-auth-wrapper auth-wrapper">
+            <form name="signin" class="ty-form signin-form">
+                <label class="ty-input-block">
+                    <span class="ty-user-label">Email</span>
+                    <input class="ty-user-input" type="email" placeholder="Enter your email" required="true" />
+                </label>
+                <label class="ty-input-block">
+                    <span class="ty-user-label">Password</span>
+                    <input class="ty-user-input" type="password" placeholder="Enter your password" required="true" />
+                </label>
+                <div class="ty-alignright-block">
+                    <button class="ty-alignright ty-user-button">Sign In</button>
+                </div>
+                <div class="ty-alignright-block forgot-pswd-block">
+                    <a class="ty-alignright ty-forgot-password">Forgot your password?</a>
+                </div>
+            </form>
+            <div class="social-logins">
+                <user-fb>Sign In with Facebook</user-fb>
+                <user-gmail>Sign In with Gmail</user-gmail>
+            </div>
+        </div>
+    </div>
+</user-popup>
