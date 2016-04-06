@@ -22,10 +22,6 @@ angular.module('authApp')
                 $scope.popup.isOpen = bool;
             };
 
-            $scope.preventBubble = function(event) {
-                event.stopPropagation();
-            };
-
             $scope.$on(FACEBOOK_CONSTANTS.SIGN_IN_LISTENER, function(event, response, meresponse) {
                 console.log(response, meresponse);
             });
