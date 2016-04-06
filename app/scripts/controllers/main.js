@@ -18,6 +18,15 @@ angular.module('authApp')
                 isOpen: true
             };
 
+            $scope.login = {
+                isOpen: true
+            };
+
+            $scope.signInShow = function(e, bool) {
+                e.preventDefault();
+                $scope.login.isOpen = bool;
+            };
+
             $scope.popUpVisibility = function(bool) {
                 $scope.popup.isOpen = bool;
             };
